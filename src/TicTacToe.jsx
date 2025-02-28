@@ -38,12 +38,13 @@ const TicTacToe = () => {
 
     return (
         <div className="flex flex-col items-center">
-            <h1 className="text-2xl mb-4">{status}</h1>
+            <h1 className="text-4xl mb-4">Tic Tac Toe</h1>
+            <h2 className="text-2xl mb-4">{status}</h2>
             <div className="grid grid-cols-3 gap-2">
                 {squares.map((square, index) => (
                     <button
                         key={index}
-                        className="w-24 h-24 text-3xl font-bold bg-gray-200 hover:bg-gray-300"
+                        className="w-24 h-24 text-3xl font-bold bg-gray-400 rounded hover:bg-gray-300"
                         onClick={() => handleSquareClick(index)}
                     >
                         {square}
